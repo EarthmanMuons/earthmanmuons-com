@@ -14,21 +14,19 @@
       min-height: 100vh;
     }
     img {
-      width: 1024px;
-      height: 1024px;
       max-width: 100%;
-    }
-    @media (max-width: 1024px) {
-      img {
-        width: 100%;
-        height: auto;
-      }
+      height: auto;
     }
   </style>
 </head>
 <body>
   <a href="https://github.com/EarthmanMuons">
-    <img src="logo.png" alt="Earthman Muons Mascot">
+    <img
+      src="logo-1024w.avif"
+      srcset="logo-320w.avif 320w, logo-768w.avif 768w, logo-1024w.avif 1024w"
+      sizes="(max-width: 1024px) 100vw, 1024px"
+      alt="Earthman Muons Mascot"
+    />
   </a>
 </body>
 </html>
